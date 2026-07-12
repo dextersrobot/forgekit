@@ -1,8 +1,45 @@
 # ForgeKit
 
-**MIT core** — open-source AI SaaS starter: Next.js 15 (App Router, TypeScript), Tailwind CSS + shadcn/ui, Clerk auth, Postgres + Drizzle ORM, flat-rate Stripe billing, and streaming AI chat via the Vercel AI SDK (OpenAI/Anthropic).
+**MIT open-source AI SaaS starter** — clone, configure, and ship a subscription chat product without rebuilding auth, billing, or AI streaming from scratch.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdextersrobot%2Fforgekit&env=NEXT_PUBLIC_APP_URL,NEXT_PUBLIC_FEATURES,NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY,CLERK_WEBHOOK_SECRET,DATABASE_URL,STRIPE_SECRET_KEY,STRIPE_WEBHOOK_SECRET,STRIPE_PRICE_ID_PRO,AI_PROVIDER,OPENAI_API_KEY,ANTHROPIC_API_KEY,RESEND_API_KEY,EMAIL_FROM,USAGE_ALERT_THRESHOLD&envDescription=API%20keys%20and%20configuration%20for%20ForgeKit&envLink=https%3A%2F%2Fgithub.com%2Fdextersrobot%2Fforgekit%23setup)
+
+## What is this?
+
+ForgeKit is a **minimal, production-oriented template** for AI SaaS apps. This public repo is the **free MIT core** — the parts you need to launch a paid chat product:
+
+- **Clerk authentication** — sign-up, sign-in, user profiles
+- **Streaming AI chat** — Vercel AI SDK with OpenAI or Anthropic (`AI_PROVIDER` env var)
+- **Stripe billing** — free tier + flat-rate Pro plan, checkout, customer portal, webhooks
+- **Usage limits** — monthly caps on free/pro plans with threshold email alerts
+- **Dashboard shell** — overview, chat, billing, and settings pages ready to customize
+
+Need teams, document RAG, agents, metered billing, or analytics? That is **ForgeKit Pro** (commercial) — not included in this repo.
+
+## Use cases
+
+This repo is a good fit when you want to:
+
+| Goal | How ForgeKit helps |
+| --- | --- |
+| **Launch a paid AI chat app fast** | Auth, Stripe checkout, and streaming chat are already integrated |
+| **Learn AI SaaS architecture** | Readable Next.js 15 App Router code with real webhooks and DB schema |
+| **Prototype a single-user copilot** | Skip org/RAG complexity; add your prompts and branding |
+| **Fork and extend** | MIT license — build your product on top without vendor lock-in |
+| **Upgrade later** | Same codebase family as ForgeKit Pro when you need RAG, teams, or metered billing |
+
+## Core vs Pro
+
+| | **ForgeKit (this repo)** | **ForgeKit Pro** |
+| --- | --- | --- |
+| License | MIT, public | Commercial, private |
+| Auth | Users | Users + organizations |
+| AI chat | Streaming | Streaming + tool-calling agents |
+| Billing | Flat-rate Pro plan | Flat-rate + usage-based metered |
+| Documents / RAG | — | Upload, embed, cite in chat |
+| Analytics | — | Admin usage dashboard |
+
+Pro source is not published here. Contact the maintainer for a commercial license.
 
 ## Stack
 
@@ -15,12 +52,6 @@
 | Billing | Stripe (flat-rate Pro plan, customer portal, webhooks) |
 | AI | Vercel AI SDK — `AI_PROVIDER=openai` or `anthropic`, streaming |
 | Email | Resend (welcome, subscription changed, usage threshold) |
-
-## Core vs Pro
-
-This public repo is the **MIT core** (`NEXT_PUBLIC_FEATURES=""`): Clerk auth, streaming AI chat, flat-rate Stripe billing, dashboard shell.
-
-**ForgeKit Pro** (commercial, private) adds multi-tenancy, RAG + pgvector, agents, metered billing, and usage analytics. Contact the maintainer for a commercial license — Pro source is not published here.
 
 ## Setup
 
