@@ -1,4 +1,4 @@
-# ForgeKit
+# Forge Kit
 
 **MIT open-source AI SaaS starter** clone, configure, and ship a subscription chat product without rebuilding auth, billing, or AI streaming from scratch.
 
