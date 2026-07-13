@@ -1,6 +1,6 @@
 # ForgeKit
 
-**MIT open-source AI SaaS starter** — clone, configure, and ship a subscription chat product without rebuilding auth, billing, or AI streaming from scratch.
+**MIT open-source AI SaaS starter** clone, configure, and ship a subscription chat product without rebuilding auth, billing, or AI streaming from scratch.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdextersrobot%2Fforgekit&env=NEXT_PUBLIC_APP_URL,NEXT_PUBLIC_FEATURES,NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY,CLERK_WEBHOOK_SECRET,DATABASE_URL,STRIPE_SECRET_KEY,STRIPE_WEBHOOK_SECRET,STRIPE_PRICE_ID_PRO,AI_PROVIDER,OPENAI_API_KEY,ANTHROPIC_API_KEY,RESEND_API_KEY,EMAIL_FROM,USAGE_ALERT_THRESHOLD&envDescription=API%20keys%20and%20configuration%20for%20ForgeKit&envLink=https%3A%2F%2Fgithub.com%2Fdextersrobot%2Fforgekit%23setup)
 
